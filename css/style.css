@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 8px 5px 8px 5px;
+    min-height: 10vh;
+    height: 90%;
+    color: black;
+}
+
+.logo{
+    font-family: 'Gayathri', sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: row !important;
+    cursor: default;
+}
+
+.logo h1{
+    margin-right: 8px;
+}
+
+.imgLogo{
+    height: 28px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+     display: inline-block;
+}
+
+nav ul li a{
+     margin: 0 10px;
+     padding: 8px;
+     text-decoration: none;
+     background-color: white;
+     color: black;
+}
+
+nav ul li a:hover{
+     background-color: black;
+     color: white;
+     transition: 0.5s all ease 0s;
+
+}
+
+section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 635px;
+}
+
+#about{
+     background-color: #34495e;
+     color: rgba(245, 245, 245, 0.6);
+}
+
+#about h1, #contact h1{
+     position: relative;
+     left: -22%;
+     margin-top: 40px;
+     margin-left: 25px;
+     color: white;
+     font-size: 40px;
+     border-bottom: 2px solid white;
+}
+
+.desc{
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     width: 500px;
+     height: 100%;
+     margin: 20px; 
+     background-color: #34495e;
+     align-items: center;
+     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+ }
+
+.desc p{
+     padding: 10px 60px;
+     text-align: justify;
+     margin-left: 20px;
+     margin-right: 20px;
+     position: relative;
+     top: 225px;
+}
+
+.myfoto{
+    position: absolute;
+    margin: 5px;
+     border-radius: 50%;
+     height: 200px;
+}
+
+#services{
+     background-color: orange;
+}
+
+#services h1{
+    position: relative;
+    left: 22%;
+    margin-top: 40px;
+    color: white;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+}
+
+.container-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+    width: 300px;
+    height: 90%;
+    margin: 0 50px;
+}
+
+.imagem{
+    height: 75px;
+    margin: 10px 0;
+}
+
+.card h2{
+    color: black;
+}
+
+.card p{
+    color: black;
+    text-align: justify;
+    padding: 20px 20px;
+    margin: 0 20px;
+}
+
+#contact{
+     background-color: black;
+}
+
+.container-contact{
+     height: 400px;
+     width: 90%;
+     margin: 50px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+em{
+    margin: 25px 0;
+    font-size: 40px;
+    color: white;
+}
+
+span{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9);
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    position: relative;
+    left: 39%;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 960px){
+
+       html,body{
+           width: 100%;
+           height: auto;
+           padding: 0;
+           margin: 0;
+           overflow-x: hidden;
+       }
+       
+       header,section,footer{
+           box-sizing: border-box;
+       }
+     
+       header ul li a{
+           display: none;
+       }
+
+       header{
+           display: flex;
+           align-items: center; 
+           text-align: center;
+           width: 100%;
+       }
+
+       #about{
+            height: 1000px;
+       }
+        
+       #about h1{
+           text-align: center;
+       }
+
+       section{
+           width: 100%;
+       }
+
+      .desc{
+           width: 100%;
+           height: 750px; 
+      }
+
+       #services{
+           height: 1200px;
+       }
+
+      .container-services{
+           display: flex;
+           flex-direction: column;
+           align-content: center;
+      }
+
+      .card{
+           margin: 30px 0;
+      }
+
+      .container-contact{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           align-content: center;
+      } 
+       
+      em{
+           margin: 0 20px;
+           font-size: 25px;          
+      }
+
+      footer{
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        text-align: center;
+    }
+
+      footer p{
+         position: relative; 
+         left: 10%;
+      }
+
+}
